@@ -22,6 +22,10 @@ cd ecommwmocktest
 ```bash
 composer install
 ```
+rm -rf node_modules
+npm install
+npm run build
+
 
 3. **Copy `.env` file and generate app key**
 

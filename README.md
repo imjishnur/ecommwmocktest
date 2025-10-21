@@ -36,9 +36,9 @@ php artisan key:generate
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=your_database
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+DB_DATABASE=ecom
+DB_USERNAME=root
+DB_PASSWORD=
 ```
 
 5. **Run migrations and seeders**
@@ -63,15 +63,21 @@ Open in browser: `http://127.0.0.1:8000`
 
 ---
 
-## Product Import
+## Sample Login Credentials
 
-- Import products using an Excel file with columns:
+| Area            | URL                                                      | Email               | Password  |
+|-----------------|----------------------------------------------------------|-------------------|----------|
+| Admin Dashboard | [http://127.0.0.1:8000/dashboard](http://127.0.0.1:8000/dashboard) | admin@example.com | password |
+| Frontend        | [http://127.0.0.1:8000/](http://127.0.0.1:8000/)       | -                 | -        |
 
-```
-Name | Category | Color | Size | Qty | Price | Image URL
-```
+---
 
-- Images from the URL will be downloaded, saved locally, and converted to WebP format.
+
+## Sample Coupon Code for Testing
+
+| Code      | Type   | Discount       |
+|-----------|--------|---------------|
+| FIXED50   | Fixed  | 50  off  |
 
 ---
 
